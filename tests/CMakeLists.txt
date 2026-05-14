@@ -42,7 +42,7 @@ set(CMAKE_EXECUTABLE_SUFFIX            ".riscv")
 #################################
 
 # CPU architecture
-set(ARCH                "rv64imafd")
+set(ARCH                "rv64imafdc")
 set(ABI                 "lp64d")
 set(CMODEL              "medany")
 set(ARCH_FLAGS          -march=${ARCH} -mabi=${ABI} -mcmodel=${CMODEL})
@@ -90,6 +90,9 @@ add_executable(read_ckpt read_ckpt.c)
 add_executable(branch_counter branch_counter.c)
 add_executable(mt-hello mt-hello.c)
 add_executable(symmetric symmetric.c)
+add_executable(test_ras test_ras.c)
+add_executable(call_return_prediction call_return_prediction.c)
+add_executable(jmp_test jmp_test.c)
 
 #################################
 # Disassembly
@@ -128,7 +131,10 @@ add_dump_target(gcd)
 add_dump_target(hello)
 add_dump_target(mt-hello)
 add_dump_target(symmetric)
-
+add_dump_target(branch_counter)
+add_dump_target(test_ras)
+add_dump_target(call_return_prediction)
+add_dump_target(jmp_test)
 
 # Add custom command to generate spiflash.img from spiflash.py
 add_custom_command(

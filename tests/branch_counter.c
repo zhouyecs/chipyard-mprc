@@ -119,7 +119,7 @@ int main(void) {
   bench_call_chain(N);
   // 40 层的递归调用会超过 medium boom 中 32 大小的
   // RAS，产生少量返回地址预测错误
-  bench_recursion(N / 40, 40);
+  bench_recursion(N / 100, 100);
 
   ReadCounter16(&counters[0], 0);
   ReadCounter16(&counters[16], 16);

@@ -3,3 +3,6 @@
 !Makefile
 !verilator.mk
 !dramsim2_ini
+!run_boom.sh
+!run_all_benchmarks.sh
+!run_ras.sh

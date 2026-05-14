@@ -8,12 +8,203 @@ import org.chipsalliance.cde.config.{Config}
 // ---------------------
 
 class SmallBoomV3Config extends Config(
-  new boom.v3.common.WithNSmallBooms(1) ++                          // small boom config
+  new boom.v3.common.WithNSmallBooms(1) ++                             // small boom config
   new chipyard.config.AbstractConfig)
 
 class MediumBoomV3Config extends Config(
   new boom.v3.common.WithNMediumBooms(1) ++                         // medium boom config
   new chipyard.config.AbstractConfig)
+
+
+// // dev_yz_no_ras
+// class NoRASx32 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMyMediumBooms(1) ++
+//   new chipyard.config.AbstractConfig)
+
+
+// // dev_yz_ras_tos_repair
+// class RASTosRepairx8 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMydevyzRASTosRepairMediumBooms(1,8) ++
+//   new chipyard.config.AbstractConfig)
+
+// class RASTosRepairx16 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMydevyzRASTosRepairMediumBooms(1,16) ++
+//   new chipyard.config.AbstractConfig)
+
+// class RASTosRepairx32 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMydevyzRASTosRepairMediumBooms(1,32) ++
+//   new chipyard.config.AbstractConfig)
+
+// class RASTosRepairx64 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMydevyzRASTosRepairMediumBooms(1,64) ++
+//   new chipyard.config.AbstractConfig)
+
+
+// // dev_yz_saras
+// class SARASx4y4 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMySARASMediumBooms(1,4,4) ++
+//   new chipyard.config.AbstractConfig)
+
+// class SARASx8y4 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMySARASMediumBooms(1,8,4) ++
+//   new chipyard.config.AbstractConfig)
+
+// class SARASx8y8 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMySARASMediumBooms(1,8,8) ++
+//   new chipyard.config.AbstractConfig)
+
+// class SARASx16y4 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMySARASMediumBooms(1,16,4) ++
+//   new chipyard.config.AbstractConfig)
+
+// class SARASx16y8 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMySARASMediumBooms(1,16,8) ++
+//   new chipyard.config.AbstractConfig)
+
+// class SARASx16y16 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMySARASMediumBooms(1,16,16) ++
+//   new chipyard.config.AbstractConfig)
+
+// class SARASx32y4 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMySARASMediumBooms(1,32,4) ++
+//   new chipyard.config.AbstractConfig)
+
+// class SARASx32y8 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMySARASMediumBooms(1,32,8) ++
+//   new chipyard.config.AbstractConfig)
+
+// class SARASx32y16 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMySARASMediumBooms(1,32,16) ++
+//   new chipyard.config.AbstractConfig)
+
+// class SARASx32y32 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMySARASMediumBooms(1,32,32) ++
+//   new chipyard.config.AbstractConfig)
+
+// class SARASx4y8 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMySARASMediumBooms(1,4,8) ++
+//   new chipyard.config.AbstractConfig)
+
+// class SARASx4y16 extends Config(
+// 	new boom.v3.common.UseLoopConfig(true) ++
+// 	new boom.v3.common.WithMySARASMediumBooms(1,4,16) ++
+// 	new chipyard.config.AbstractConfig)
+
+// class SARASx8y16 extends Config(
+// 	new boom.v3.common.UseLoopConfig(true) ++
+// 	new boom.v3.common.WithMySARASMediumBooms(1,8,16) ++
+// 	new chipyard.config.AbstractConfig)
+
+// class SARASx4y32 extends Config(
+// 	new boom.v3.common.UseLoopConfig(true) ++
+// 	new boom.v3.common.WithMySARASMediumBooms(1,4,32) ++
+// 	new chipyard.config.AbstractConfig)
+
+// class SARASx8y32 extends Config(
+// 	new boom.v3.common.UseLoopConfig(true) ++
+// 	new boom.v3.common.WithMySARASMediumBooms(1,8,32) ++
+// 	new chipyard.config.AbstractConfig)
+
+// class SARASx16y32 extends Config(
+// 	new boom.v3.common.UseLoopConfig(true) ++
+// 	new boom.v3.common.WithMySARASMediumBooms(1,16,32) ++
+// 	new chipyard.config.AbstractConfig)
+
+
+// // dev_yz_dsras
+// class DSRASx4y4 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMydevyzDSRASMediumBooms(1,4) ++
+//   new chipyard.config.AbstractConfig)
+
+// class DSRASx8y8 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMydevyzDSRASMediumBooms(1,8) ++
+//   new chipyard.config.AbstractConfig)
+
+// class DSRASx16y16 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMydevyzDSRASMediumBooms(1,16) ++
+//   new chipyard.config.AbstractConfig)
+
+// class DSRASx32y32 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMydevyzDSRASMediumBooms(1,32) ++
+//   new chipyard.config.AbstractConfig)
+
+
+// // SQRAS
+// class SQRASx4y4z4 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMySQRASMediumBooms(1,4,4,4) ++
+//   new chipyard.config.AbstractConfig)
+
+// class SQRASx8y4z4 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMySQRASMediumBooms(1,8,4,4) ++
+//   new chipyard.config.AbstractConfig)
+
+// class SQRASx4y8z4 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMySQRASMediumBooms(1,4,8,4) ++
+//   new chipyard.config.AbstractConfig)
+
+// class SQRASx8y8z4 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMySQRASMediumBooms(1,8,8,4) ++
+//   new chipyard.config.AbstractConfig)
+
+// class SQRASx8y16z4 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMySQRASMediumBooms(1,8,16,4) ++
+//   new chipyard.config.AbstractConfig)
+
+// class SQRASx16y8z4 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMySQRASMediumBooms(1,16,8,4) ++
+//   new chipyard.config.AbstractConfig)
+
+// class SQRASx16y16z4 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMySQRASMediumBooms(1,16,16,4) ++
+//   new chipyard.config.AbstractConfig)
+
+// class SQRASx32y16z4 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMySQRASMediumBooms(1,32,16,4) ++
+//   new chipyard.config.AbstractConfig)
+
+// class SQRASx16y32z4 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMySQRASMediumBooms(1,16,32,4) ++
+//   new chipyard.config.AbstractConfig)
+
+// class SQRASx32y32z4 extends Config(
+//   new boom.v3.common.UseLoopConfig(true) ++
+//   new boom.v3.common.WithMySQRASMediumBooms(1,32,32,4) ++
+//   new chipyard.config.AbstractConfig)
+
+
+class MediumBoomV3SimConfig extends Config(
+  new boom.v3.common.UseLoopConfig(true) ++
+	new boom.v3.common.WithSimBooms(1) ++
+	new chipyard.config.AbstractConfig)
 
 class LargeBoomV3Config extends Config(
   new boom.v3.common.WithNLargeBooms(1) ++                          // large boom config
